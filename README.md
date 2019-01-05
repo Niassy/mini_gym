@@ -9,6 +9,8 @@ you can use other articial technique like Goal Orienter Behaviour,Fuzzy logic,et
 ##  There are so many Reinforcement platforms... Why using mini_gym ?
 
 mini_gym differs from the other platform by his simplicity and his ready to go testing.
+Also many of the RL platform use tensorflow as for implementing the algorithm.
+Our platform will be more focused on pytorch for deep learning algorithm.
 You do not need to install many depedencies to run it. You just need to have python and pygame and a interpreter.
 If you want to train your agent using Deep Q Network, install pytorch
 
@@ -71,7 +73,7 @@ If you want to choose DeepQ Network
 
 ## Define the number of episodes
 
-See Machine_Learning/hyper_parameters.py for some defined constants  like the number of episodes
+See Machine_Learning/hyper_parameters.py for some defined constants like the number of episodes
 
     num_episodes = NUM_EPISODE
     
