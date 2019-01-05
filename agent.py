@@ -12,6 +12,10 @@ from abc import ABC,abstractmethod
 import pygame
 import random
 
+from Machine_Learning.deep_q_network import *
+from Machine_Learning.q_learning import *
+
+from common.constants import *
 
 # This class is abstract
 class Agent(ABC):
@@ -57,3 +61,23 @@ class Agent(ABC):
     def getEnvironment(self):
 
         return self.environment
+
+    ###################### Brain interface ############################
+
+    # Choose your learning algorithm
+    # @abstractmethod
+    def useBrain(self, brainType):
+        brain = None
+
+        if brainType == Brain_Type.Deep_Q_Network:
+
+            brain = DeepQNetwork(agent=self, num_inputs=self.environment.state_dimension, num_outputs=self.environment.action_dimension,
+                                 hidden_size=256)
+
+
+        else:
+            brain = QLearning(agent=self)
+
+
+        self.brain = brain
+
