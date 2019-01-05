@@ -4,6 +4,7 @@ from abc import ABC,abstractmethod
 import pygame
 import random
 
+from common.constants import *
 class Environment(ABC):
 
     def __init__(self,screen):
@@ -105,7 +106,20 @@ class Environment(ABC):
 
         #pass
 
-
     def addAgent(self, agent):
         self.agents.append(agent)
+
+
+    def setMainAgent(self, brainType):
+        self.main_agent.useBrain(brainType)
+
+
+    # def setStateDimension(self,state_dim):
+    #
+    #     self.state_dimension =state_dim
+    #
+    # def setActionDimenson(self,action_dim):
+    #
+    #     self.action_dimension = action_dim
+
 
