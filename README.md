@@ -3,15 +3,18 @@
 mini_gym is a free library for developping Reinforcement Learning algorithm. 
 It is written in python and use pygame for rendering the game.
 It contains s aet of environment you can use for implementing your artificial intelligence algorithm.
+Ii is mainly aimed to use Reinforcement Learning algorithm but the architecture is very flexible and
+you can use other articial technique like Goal Orienter Behaviour,Fuzzy logic,etc...
 
-1 - There are so many RL platforms... Why using mini_gym_ai?
+##  There are so many RL platforms... Why using mini_gym_ai?
 
-Mmini_gym differs from the other platform by his simplicity and his ready to go testting.
+mini_gym differs from the other platform by his simplicity and his ready to go testting.
 You do not need to install many depedencies to run it. You just need to have python and pygame and a interpreter.
 In addition,you can create easily your environment and cmustomize the state and action of the environment.
 
 
-1 Architecture
+# Architecture
+
     - main compoonents:
         Environment
         State
@@ -22,9 +25,20 @@ In addition,you can create easily your environment and cmustomize the state and 
 
 mini_gym architecture:
 
-Environment
+## Environment
 
 The environment defines the rules of game.For now,we have included one environment which is the famous grid world.
+Each environment hiils a number of agent which interact with it.
+
+## Agent
+The agent is the entity who interacts with the environment. The agent is controlled by a brain who is reponsible for his decision.
+
+## Brain
+The brain is the learning algorithm you attach to your agent decision making.
+Currently,the engines support two brain which are the Q Learning and DeepQNetwork.
+
+
+# IMporting the grid world en
 
 GridWorld Environment
 
@@ -35,17 +49,17 @@ The agent get reward of -1 for each move
 The agent et reward of +3 if he gets closer to his goal
 
 
-4 - Implemeing an agent that plays GridWorld
+## Implemeing an agent that plays GridWorld
 You can check test.py for the implemtation
 
 Below are the step.
 
 
-############## Importing the gridworld environment ###################
+# Importing the gridworld environment #
+See test.py for this implentation
 
-#See test.py for this implentation
 
-# import your environment
+## import your environment
 env = gridworld()
 
 # define your agent
