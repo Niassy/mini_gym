@@ -2,18 +2,17 @@
 
 mini_gym is a free library for developping Reinforcement Learning algorithm. 
 It is written in python and use pygame for rendering the game.
-It contains s aet of environment you can use for implementing your artificial intelligence algorithm.
+It contains of environment you can use for testing implementing your artificial intelligence algorithm.
 Ii is mainly aimed to use Reinforcement Learning algorithm but the architecture is very flexible and
-you can use other articial technique like Goal Orienter Behaviour,Fuzzy logic,etc...
+you can use other artificial intelligence technique like Goal Orientef Behaviour,Fuzzy logic,etc...
 
 ##  There are so many Reinforcement platforms... Why using mini_gym ?
 
 mini_gym differs from the other platform by his simplicity and his ready to go testing.
 Also many of the RL platform use tensorflow as for implementing the algorithm.
 Our platform will be more focused on pytorch for deep learning algorithm.
-You do not need to install many depedencies to run it. You just need to have python and pygame and a interpreter.
-If you want to train your agent using Deep Q Network, install pytorch
-
+You do not need to install many depedencies to run it. You just need to install python and pygame.
+If you want to train your agent using Deep Q Network, install pytorch.
 In addition,you can create easily your environment and customize the state and action of the environment.
 
 # Installation
