@@ -6,10 +6,10 @@ NUM_EPISODE = 200
 ANNELING_STEPS = 20000
 
 # If true the model will be saved when finish the training
-SAVE_MODEL = True
+SAVE_MODEL = False
 
 # If true you will load from a model
-LOAD_MODEL = True
+LOAD_MODEL = False
 
 ############# Neural Netork approach #################
 
