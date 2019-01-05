@@ -23,9 +23,24 @@ def main():
 
     #env.render()
 
+    # Choose your learning algorithms
+    # Here we choose Q Learning
+    # if you want to choose Q Learning:
+    # env.setMainAgent(Brain_Type.Deep_Q_Network)
+    env.setMainAgent(Brain_Type.Q_Learning)
+
+
+    # Set your model to training mode
     env.main_agent.brain.trainModel()
 
+
+    # define the number of episode
+    # see the file constants,py
+    # NUM_EPISODE is defined there
     num_episodes = NUM_EPISODE
+
+    # This is the mxaximum number of steo the agent run
+    # before stoping the episode
 
     max_frames = 200
 
