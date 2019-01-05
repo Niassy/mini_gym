@@ -47,13 +47,14 @@ See brain.py to check how it was implemented. The Q Learning and the Deep Q Netw
 
 
 # Using Q Learning algorithm with the gridworld environment
-
-You can check main.py for more details of the implemtation
+You can check main.py for more details of the implementation
 
 Below are the step.
 
 ## import your environment
-env = GD_Environment(screen)
+We import the gridworld environment. Check Environment/gridworld/gridworld_environment.py for more details.
+
+    env = GD_Environment(screen)
 
 
 ## Choose your learning algorithm (Q Learning or DeepQNetwork )
