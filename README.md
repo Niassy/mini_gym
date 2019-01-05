@@ -56,18 +56,17 @@ Below are the step.
 env = GD_Environment(screen)
 
 
-## Choose your learning algorithm of your agent (Q Learning or DeepQNetwork )
+## Choose your learning algorithm (Q Learning or DeepQNetwork )
 Here we choose Q Learning if you want to choose Q Learning:
 
-       env.setMainAgent(Brain_Type.Q_Learning)
+    env.setMainAgent(Brain_Type.Q_Learning)
 If you want to choose DeepQ Network
 
-        env.setMainAgent(Brain_Type.Deep_Q_Network)
+    env.setMainAgent(Brain_Type.Deep_Q_Network)
 
 ## Make your model in training mode
  
     env.training =True
-
 
 ## Define the number of episodes
 
@@ -104,37 +103,3 @@ See Machine_Learning/hyper_parameters.py for some defined constants  like the nu
                 done =True
             time.sleep(0.01)
 
-     
-     
-  ############# MAKING INFERENCE aka Using your model to predict
-  
-  ## set te model to test mode. Note that it will have no effect if QLearning
-  # is used as a Brain
-  env.agent.brain.eval()
-  
-  
-  ## Notify the agent that we are test mode
-  env.agent.brain.inference = True
-  
-
-while not done:
-   
-  env.render()
-
-  for i in range(NUM_EPISODE):
-     
-     env.step()
-     
-     env.render()
-  
-
-
-GridWorld Environment
-
-In this environment,the agent must navigate to the goal while avoiding the obstacles.
-The agent get reward of +50 if reach the goal
-The agent get reward of -50 if hits an obstacle
-The agent get reward of -1 for each move
-The agent et reward of +3 if he gets closer to his goal
-
-Check ... to see how it was implented
