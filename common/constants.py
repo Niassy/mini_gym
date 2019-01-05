@@ -24,5 +24,15 @@ class GD_Actions(Enum):
 
 MODEL_PATH = "torch_model"
 
+
+# Define the learning algorithm you use
+# if you
+class Brain_Type(Enum):
+
+    Q_Learning =0,
+    Deep_Q_Network = 1
+
+
+
 #GD_GOAL_TILE = ()
 
