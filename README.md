@@ -1,4 +1,4 @@
-# NAPRL(Nao Another Platform for Reinforcement Learning)
+# NAPRL(Not Another Platform for Reinforcement Learning)
 
 NAPRL is a free library for developping Reinforcement Learning algorithm. 
 It is written in python and use pygame for rendering the game.
